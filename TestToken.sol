@@ -3,9 +3,8 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
 
-contract TestToken is Ownable, ERC20, Pausable {
+contract TestToken is Ownable, ERC20 {
     address[] public poolLists;
     mapping(address => bool) private _isPoolEnabled;
 
